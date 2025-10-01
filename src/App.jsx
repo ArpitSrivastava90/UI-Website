@@ -1,10 +1,12 @@
 import "./App.css";
+import Card1 from "./components/card-1";
+import Card2 from "./components/card-2";
 
 const App = () => {
   return (
-    <div className="h-screen w-full bg-black px-10 py-10 flex justify-center items-center">
-      <div className="w-full h-full bg-[#1A1A1A] rounded-xl flex  flex-wrap justify-start items-start p-4 gap-2">
-        <div className="box w-60 h-80 bg-red-500 ml-5 rounded-xl"></div>
+    <div className="h-screen w-full bg-[#0A0A0A] px-10 py-10 flex justify-center items-center">
+      <div className="w-full h-full  rounded-xl  p-2 bg-black">
+        <Card2 />
       </div>
     </div>
   );
