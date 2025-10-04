@@ -2,6 +2,7 @@ import { useState } from "react";
 import { motion } from "motion/react";
 import img from "../images/Pic1.jpg";
 import { RiArrowDropDownLine } from "react-icons/ri";
+import { RiArrowDropUpLine } from "react-icons/ri";
 import { GiPathDistance } from "react-icons/gi";
 
 const Card2 = () => {
@@ -110,7 +111,7 @@ const Card2 = () => {
             onClick={() => setisClicked(!isClicked)}
             className="hover:cursor-pointer text-2xl"
           >
-            <RiArrowDropDownLine />
+            {isClicked ? <RiArrowDropUpLine /> : <RiArrowDropDownLine />}
           </button>
         </motion.div>
       </div>
